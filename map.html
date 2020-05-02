@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Map</title>
-    <style>
-      g {
-        fill: #52803b;
-      }
-      .athens {
-        fill: #cfb000;
-      }
-      .athens:hover {
-        fill: #ffd900;
-        -webkit-transition: fill 0.5s ease;
-        transition: fill 0.5s ease;
-      }
-      .state:hover {
-        fill: #365527;
-        -webkit-transition: fill 0.5s ease;
-        transition: fill 0.5s ease;
-      }
-      path {
-        stroke: white;
-        stroke-width: 2px;
-        stroke-linejoin: round;
-      }
-    </style>
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <svg class="us_states" width="400" height="600" version="1.1">
+<svg class="us_states" width="400" height="600" version="1.1">
       <g transform="translate(-560.83,-181.77)" id="g4413">
         <g class="states" id="us_state">
           <path
@@ -133,27 +97,3 @@
         </g>
       </g>
     </svg>
-    <script>
-      var insta_dict = {
-        AL: "https://www.instagram.com/terrapinbeeral/",
-        GA: "https://www.instagram.com/terrapinbeerGA/",
-        ATH: "https://www.instagram.com/terrapinbeerATH/",
-        FL: "https://www.instagram.com/terrapinbeerFL/",
-        LA: "https://www.instagram.com/terrapinbeerla/",
-        MD: "https://www.instagram.com/terrapinbeerMD/",
-        NJ: "https://www.instagram.com/terrapinbeernj/",
-        NC: "https://www.instagram.com/terrapinbeerNC/",
-        PA: "https://www.instagram.com/terrapinbeerPA/",
-        SC: "https://www.instagram.com/terrapinbeerSC/",
-        TN: "https://www.instagram.com/terrapinbeerTN/",
-        VA: "https://www.instagram.com/terrapinbeer.VA/",
-        WV: "https://www.instagram.com/terrapinbeerWV/",
-      };
-      $("path,circle").on("click", (e) => {
-        insta_link = insta_dict[e.target.id];
-        var win = window.open(insta_link, "_blank");
-        if (win) win.focus();
-      });
-    </script>
-  </body>
-</html>
